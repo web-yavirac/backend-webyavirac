@@ -12,8 +12,5 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "sonarqube-scanner": "^2.8.1"
   }
 }
