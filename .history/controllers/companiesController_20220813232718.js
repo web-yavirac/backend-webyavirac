@@ -6,11 +6,11 @@ exports.crearCompanie = async (req, res) => {
     try {
         let companie;
 
-        // Creamos empresa
+        // Creamos nuestro producto
         companie = new Companie(req.body);
 
         await companie.save();
-        res.json({ msg: 'Empresa creada con exito' });
+        res.send(companie);
         
     } catch (error) {
         console.log(error);

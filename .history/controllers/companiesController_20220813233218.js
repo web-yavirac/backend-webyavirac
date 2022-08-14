@@ -6,7 +6,7 @@ exports.crearCompanie = async (req, res) => {
     try {
         let companie;
 
-        // Creamos empresa
+        // Creamos nuestro producto
         companie = new Companie(req.body);
 
         await companie.save();

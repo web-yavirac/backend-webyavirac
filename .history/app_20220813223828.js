@@ -9,8 +9,8 @@ db.dbConnection();
 app1.use(express.json());
 
 
-
-app1.use('/', require('./routes/web'));
+app1.use('/api/companies', require('./routes/web'));
+app1.use('/api/careers', require('./routes/web'));
 
 app1.listen(port, () => {
   console.log(`corriendo`)

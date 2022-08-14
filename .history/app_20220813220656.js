@@ -8,9 +8,8 @@ const port = 3000
 db.dbConnection();
 app1.use(express.json());
 
-
-
-app1.use('/', require('./routes/web'));
+app1.use('/api/companies', require('./routes/companies'));
+app1.use('/api/careers', require('./routes/careers'));
 
 app1.listen(port, () => {
   console.log(`corriendo`)
