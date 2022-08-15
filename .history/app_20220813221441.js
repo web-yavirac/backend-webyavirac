@@ -2,15 +2,17 @@ const express = require('express')
 const db = require('./config/conexion');
 const app1 = express()
 app1.disable("x-powered-by");
+const app2 = express()
+app2.disable("x-powered-by");
 const port = 3000
 
 
 db.dbConnection();
 app1.use(express.json());
+app2.use(express.json());
 
-
-
-app1.use('/', require('./routes/web'));
+app1.use('/api/companies', require('./routes/companies'));
+app2.use('/api/careers', require('./routes/careers'));
 
 app1.listen(port, () => {
   console.log(`corriendo`)

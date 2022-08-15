@@ -1,4 +1,4 @@
-const URI = 'mongodb://user_web:KinswomanFloristUpstageTaekwondoEngraverOveractDemeanorStraddleFlop@sistemaagil.net:27018/web';
+const URI = 'mongodb://user_web:KinswomanFloristUpstageTaekwondoEngraverOveractDemeanorStraddleFlop@mongo:27017/web';
 const mongoose = require('mongoose');
 
 const dbConnection = async () => {
